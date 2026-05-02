@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Lint & Fix After Task",
+  "description": "After each spec task is completed, runs ESLint with --fix to automatically correct any lint errors found in the codebase",
+  "version": "1",
+  "when": {
+    "type": "postTaskExecution"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "npx eslint \"src/**/*.{ts,tsx}\" --fix --max-warnings=0"
+  }
+}
