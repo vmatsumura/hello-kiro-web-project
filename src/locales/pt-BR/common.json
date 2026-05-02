@@ -1,0 +1,29 @@
+{
+  "app": {
+    "title": "Portal do Automóvel",
+    "tagline": "Compare veículos lado a lado"
+  },
+  "actions": {
+    "compare": "Comparar",
+    "remove": "Remover veículo",
+    "addVehicle": "Adicionar veículo",
+    "backToSelection": "Voltar à seleção",
+    "showMore": "Ver mais",
+    "close": "Fechar"
+  },
+  "placeholders": {
+    "photoUnavailable": "Foto não disponível",
+    "dataUnavailable": "—",
+    "selectBrand": "Selecione a marca",
+    "selectModel": "Selecione o modelo",
+    "selectYear": "Selecione o ano",
+    "selectVersion": "Selecione a versão"
+  },
+  "theme": {
+    "toggleDark": "Ativar modo escuro",
+    "toggleLight": "Ativar modo claro"
+  },
+  "nav": {
+    "label": "Navegação principal"
+  }
+}

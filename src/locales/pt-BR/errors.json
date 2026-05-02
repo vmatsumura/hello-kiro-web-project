@@ -1,0 +1,9 @@
+{
+  "minVehicles": "Selecione ao menos 2 veículos para comparar.",
+  "invalidVehicleId": "Veículo não encontrado. Selecione outro veículo.",
+  "invalidUrl": "O link de comparação é inválido. Redirecionando para a seleção...",
+  "generic": "Ocorreu um erro inesperado. Tente novamente.",
+  "sectionError": "Não foi possível carregar a seção \"{{name}}\". Tente recarregar a página.",
+  "notFound": "Página não encontrada.",
+  "notFoundDescription": "A página que você está procurando não existe ou foi movida."
+}

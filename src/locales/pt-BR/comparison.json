@@ -1,0 +1,49 @@
+{
+  "page": {
+    "title": "Comparar Veículos"
+  },
+  "blocks": {
+    "motorTransmissao": "Motor e Transmissão",
+    "desempenho": "Desempenho",
+    "dimensoesPeso": "Dimensões e Peso",
+    "rodasPneusFreios": "Rodas, Pneus e Freios",
+    "segurancaAtiva": "Segurança Ativa",
+    "segurancaPassiva": "Segurança Passiva",
+    "tecnologiaConectividade": "Tecnologia e Conectividade",
+    "confortoConveniencias": "Conforto e Conveniências",
+    "capacidadePassageiros": "Capacidade de Passageiros",
+    "galeria": "Galeria de Fotos"
+  },
+  "toggle": {
+    "showOnlyDiffs": "Mostrar apenas diferenças",
+    "ariaLabel": "Alternar exibição: mostrar apenas especificações diferentes entre os veículos"
+  },
+  "bestValue": {
+    "higher": "Melhor valor",
+    "lower": "Melhor valor",
+    "higherAriaLabel": "Melhor valor: maior é melhor",
+    "lowerAriaLabel": "Melhor valor: menor é melhor"
+  },
+  "photoCategories": {
+    "frontal-3-4": "Vista frontal (3/4 dianteiro)",
+    "lateral-direita": "Vista lateral direita",
+    "traseira-3-4": "Vista traseira (3/4 traseiro)",
+    "lateral-esquerda": "Vista lateral esquerda",
+    "painel-cockpit": "Painel e cockpit do motorista",
+    "banco-traseiro": "Banco traseiro",
+    "porta-malas-aberto": "Porta-malas aberto",
+    "motor-tampa-aberta": "Motor com tampa aberta",
+    "detalhe-rodas": "Detalhe das rodas"
+  },
+  "identification": {
+    "msrp": "Preço sugerido",
+    "removeAriaLabel": "Remover {{name}} da comparação"
+  },
+  "selection": {
+    "title": "Selecionar Veículos",
+    "subtitle": "Escolha de 2 a 4 veículos para comparar",
+    "slot": "Veículo {{number}}",
+    "compareButton": "Comparar veículos",
+    "minVehiclesHint": "Selecione ao menos 2 veículos para comparar"
+  }
+}

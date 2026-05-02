@@ -1,0 +1,184 @@
+
+{
+  "specs": {
+    "motorTransmissao": {
+      "tipoCombustivel": { "label": "Combustível", "description": "Tipo de combustível utilizado pelo motor" },
+      "cilindradaCc": { "label": "Cilindrada", "description": "Volume total dos cilindros em centímetros cúbicos (cc)" },
+      "numeroCilindros": { "label": "Cilindros", "description": "Número de cilindros do motor" },
+      "configuracaoCilindros": { "label": "Configuração", "description": "Arranjo dos cilindros (ex: em linha, V, boxer)" },
+      "potenciaCv": { "label": "Potência", "description": "Potência máxima do motor em cavalos-vapor (cv)" },
+      "potenciaRpm": { "label": "Potência (rpm)", "description": "Rotação em que a potência máxima é atingida" },
+      "torqueKgfm": { "label": "Torque", "description": "Torque máximo do motor em quilograma-força metro (kgf.m)" },
+      "torqueRpm": { "label": "Torque (rpm)", "description": "Rotação em que o torque máximo é atingido" },
+      "alimentacao": { "label": "Alimentação", "description": "Sistema de alimentação do motor (ex: turbo, aspirado, injeção direta)" },
+      "tipoTransmissao": { "label": "Transmissão", "description": "Tipo de caixa de câmbio" },
+      "numeroDeMarchas": { "label": "Marchas", "description": "Número de marchas da transmissão" },
+      "tipoTracao": { "label": "Tração", "description": "Sistema de tração do veículo (dianteira, traseira, integral)" },
+      "potenciaEletricaCv": { "label": "Potência elétrica", "description": "Potência do motor elétrico em cavalos-vapor (cv)" },
+      "torqueEletricoKgfm": { "label": "Torque elétrico", "description": "Torque do motor elétrico em kgf.m" },
+      "capacidadeBateriaKwh": { "label": "Bateria", "description": "Capacidade da bateria em quilowatt-hora (kWh)" }
+    },
+    "desempenho": {
+      "aceleracao0a100Segundos": { "label": "0–100 km/h", "description": "Tempo de aceleração de 0 a 100 km/h em segundos" },
+      "velocidadeMaximaKmh": { "label": "Vel. máxima", "description": "Velocidade máxima do veículo em km/h" },
+      "consumoUrbanoGasolinaKmL": { "label": "Consumo urbano (gasolina)", "description": "Consumo de gasolina em ciclo urbano — INMETRO (km/l)" },
+      "consumoRodoviarioGasolinaKmL": { "label": "Consumo rodoviário (gasolina)", "description": "Consumo de gasolina em ciclo rodoviário — INMETRO (km/l)" },
+      "consumoUrbanoEtanolKmL": { "label": "Consumo urbano (etanol)", "description": "Consumo de etanol em ciclo urbano — INMETRO (km/l)" },
+      "consumoRodoviarioEtanolKmL": { "label": "Consumo rodoviário (etanol)", "description": "Consumo de etanol em ciclo rodoviário — INMETRO (km/l)" },
+      "autonomiaEletricaKm": { "label": "Autonomia elétrica", "description": "Autonomia em modo elétrico puro em quilômetros" },
+      "emissaoCo2GKm": { "label": "Emissão de CO₂", "description": "Emissão de dióxido de carbono em gramas por quilômetro (g/km)" }
+    },
+    "dimensoesPeso": {
+      "comprimentoMm": { "label": "Comprimento", "description": "Comprimento total do veículo em milímetros" },
+      "larguraMm": { "label": "Largura", "description": "Largura total do veículo em milímetros (sem espelhos)" },
+      "alturaMm": { "label": "Altura", "description": "Altura total do veículo em milímetros" },
+      "distanciaEntreEixosMm": { "label": "Entre-eixos", "description": "Distância entre os eixos dianteiro e traseiro em milímetros" },
+      "pesoKg": { "label": "Peso", "description": "Peso em ordem de marcha em quilogramas" },
+      "portaMalasLitros": { "label": "Porta-malas", "description": "Capacidade do porta-malas em litros" },
+      "tanqueLitros": { "label": "Tanque", "description": "Capacidade do tanque de combustível em litros" },
+      "cargaUtilKg": { "label": "Carga útil", "description": "Capacidade de carga útil em quilogramas" }
+    },
+    "rodasPneusFreios": {
+      "aroPolegadas": { "label": "Aro", "description": "Tamanho do aro das rodas em polegadas" },
+      "especificacaoPneu": { "label": "Pneu", "description": "Especificação dos pneus (ex: 205/55R16)" },
+      "materialRoda": { "label": "Material da roda", "description": "Material das rodas (liga leve ou aço)" },
+      "tipoFreiosDianteiros": { "label": "Freios dianteiros", "description": "Tipo de freio nas rodas dianteiras" },
+      "tipoFreiosTraseiros": { "label": "Freios traseiros", "description": "Tipo de freio nas rodas traseiras" },
+      "abs": { "label": "ABS", "description": "Sistema antibloqueio de rodas (Anti-lock Braking System)" },
+      "ebd": { "label": "EBD", "description": "Distribuição eletrônica de frenagem (Electronic Brakeforce Distribution)" },
+      "ba": { "label": "Assistente de frenagem", "description": "Assistente de frenagem de emergência (Brake Assist)" }
+    },
+    "segurancaAtiva": {
+      "airbags": { "label": "Airbags", "description": "Número total de airbags" },
+      "posicionamentoAirbags": { "label": "Posição dos airbags", "description": "Localização dos airbags no veículo" },
+      "controleEstabilidade": { "label": "Controle de estabilidade", "description": "Sistema eletrônico de controle de estabilidade (ESC/ESP)" },
+      "controleTracao": { "label": "Controle de tração", "description": "Sistema de controle de tração (TCS/ASC)" },
+      "assistentePartidaRampa": { "label": "Assistente de rampa", "description": "Assistente de partida em aclive (HSA/HAC)" },
+      "alertaColisaoFrontal": { "label": "Alerta de colisão frontal", "description": "Sistema de alerta de colisão frontal iminente (FCW)" },
+      "frenagemAutonomaEmergencia": { "label": "Frenagem autônoma", "description": "Frenagem autônoma de emergência (AEB)" },
+      "alertaSaidaFaixa": { "label": "Alerta de faixa", "description": "Alerta de saída involuntária de faixa (LDW)" },
+      "assistentePermanenciaFaixa": { "label": "Assistente de faixa", "description": "Assistente de permanência em faixa (LKA)" },
+      "monitorPontoCego": { "label": "Monitor de ponto cego", "description": "Sistema de monitoramento de ponto cego (BSM)" },
+      "cameraRe": { "label": "Câmera de ré", "description": "Câmera traseira para auxílio em manobras" },
+      "visao360": { "label": "Visão 360°", "description": "Sistema de câmeras com visão 360° ao redor do veículo" },
+      "sensorEstacionamentoTraseiro": { "label": "Sensor traseiro", "description": "Sensores de estacionamento traseiros" },
+      "sensorEstacionamentoDianteiro": { "label": "Sensor dianteiro", "description": "Sensores de estacionamento dianteiros" }
+    },
+    "segurancaPassiva": {
+      "notaNcapLatinEstrelas": { "label": "Latin NCAP", "description": "Nota de segurança Latin NCAP (0 a 5 estrelas)" },
+      "anoAvaliacaoNcapLatin": { "label": "Ano Latin NCAP", "description": "Ano em que o veículo foi avaliado pelo Latin NCAP" },
+      "notaNcapEuroEstrelas": { "label": "Euro NCAP", "description": "Nota de segurança Euro NCAP (0 a 5 estrelas)" },
+      "cintoPreTensionadorMotorista": { "label": "Pré-tensionador", "description": "Cinto de segurança com pré-tensionador no banco do motorista" },
+      "cintoLimitadorForca": { "label": "Limitador de força", "description": "Cinto de segurança com limitador de força" },
+      "isofix": { "label": "ISOFIX", "description": "Pontos de ancoragem ISOFIX para cadeirinhas infantis" }
+    },
+    "tecnologiaConectividade": {
+      "telaCentralPolegadas": { "label": "Tela central", "description": "Tamanho da tela da central multimídia em polegadas" },
+      "appleCarPlayComFio": { "label": "Apple CarPlay (cabo)", "description": "Suporte a Apple CarPlay via cabo USB" },
+      "appleCarPlaySemFio": { "label": "Apple CarPlay (sem fio)", "description": "Suporte a Apple CarPlay sem fio (wireless)" },
+      "androidAutoComFio": { "label": "Android Auto (cabo)", "description": "Suporte a Android Auto via cabo USB" },
+      "androidAutoSemFio": { "label": "Android Auto (sem fio)", "description": "Suporte a Android Auto sem fio (wireless)" },
+      "bluetooth": { "label": "Bluetooth", "description": "Conectividade Bluetooth para áudio e chamadas" },
+      "portasUsb": { "label": "Portas USB", "description": "Número de portas USB disponíveis" },
+      "tipoPortaUsb": { "label": "Tipo USB", "description": "Tipo(s) de conector USB disponíveis" },
+      "carregamentoWireless": { "label": "Carregamento sem fio", "description": "Carregamento wireless (Qi) para smartphones" },
+      "gpsIntegrado": { "label": "GPS integrado", "description": "Sistema de navegação GPS integrado à central multimídia" },
+      "altofaLantes": { "label": "Alto-falantes", "description": "Número de alto-falantes do sistema de som" },
+      "marcaSomPremium": { "label": "Som premium", "description": "Marca do sistema de som premium (ex: Bose, JBL)" },
+      "wifiHotspot": { "label": "Wi-Fi hotspot", "description": "Ponto de acesso Wi-Fi integrado ao veículo" },
+      "painelDigital": { "label": "Painel digital", "description": "Painel de instrumentos totalmente digital" },
+      "painelDigitalPolegadas": { "label": "Painel digital (pol.)", "description": "Tamanho do painel de instrumentos digital em polegadas" },
+      "headUpDisplay": { "label": "Head-up display", "description": "Projeção de informações no para-brisa (HUD)" }
+    },
+    "confortoConveniencias": {
+      "tipoArCondicionado": { "label": "Ar-condicionado", "description": "Tipo de sistema de ar-condicionado" },
+      "tipoDirecao": { "label": "Direção", "description": "Tipo de assistência da direção" },
+      "cruiseControlAdaptativo": { "label": "Cruise control adaptativo", "description": "Piloto automático adaptativo com controle de distância (ACC)" },
+      "cruiseControlConvencional": { "label": "Cruise control", "description": "Piloto automático convencional de velocidade" },
+      "keylessEntry": { "label": "Entrada sem chave", "description": "Abertura das portas sem inserir a chave (keyless entry)" },
+      "partidaBotao": { "label": "Partida por botão", "description": "Ignição por botão (push-start/stop)" },
+      "bancoMotoristaAjusteEletrico": { "label": "Banco motorista elétrico", "description": "Banco do motorista com ajuste elétrico de posição" },
+      "bancoMotoristaPosicoesEletricas": { "label": "Posições elétricas", "description": "Número de posições de ajuste elétrico do banco do motorista" },
+      "bancoPassageiroAjusteEletrico": { "label": "Banco passageiro elétrico", "description": "Banco do passageiro dianteiro com ajuste elétrico" },
+      "memoriaPositionBancoMotorista": { "label": "Memória de posição", "description": "Memória de posição do banco e espelhos do motorista" },
+      "bancoAquecidoDianteiro": { "label": "Banco aquecido (diant.)", "description": "Aquecimento dos bancos dianteiros" },
+      "bancoAquecidoTraseiro": { "label": "Banco aquecido (tras.)", "description": "Aquecimento dos bancos traseiros" },
+      "bancoVentilado": { "label": "Banco ventilado", "description": "Ventilação dos bancos para maior conforto térmico" },
+      "tetoSolar": { "label": "Teto solar", "description": "Teto solar de abertura convencional" },
+      "tetoPanoramico": { "label": "Teto panorâmico", "description": "Teto panorâmico em vidro de grande área" },
+      "parabrisaDesembacador": { "label": "Desembaçador elétrico", "description": "Desembaçador elétrico do para-brisa dianteiro" },
+      "retrovisorEletrico": { "label": "Retrovisores elétricos", "description": "Ajuste elétrico dos retrovisores externos" },
+      "retrovisorRebatimentoEletrico": { "label": "Rebatimento elétrico", "description": "Rebatimento automático elétrico dos retrovisores" },
+      "volanteAjusteAlturaProf": { "label": "Volante ajustável", "description": "Volante com ajuste de altura e profundidade" },
+      "revestimentoBancos": { "label": "Revestimento", "description": "Material de revestimento dos bancos" }
+    },
+    "capacidadePassageiros": {
+      "portas": { "label": "Portas", "description": "Número de portas do veículo" },
+      "passageiros": { "label": "Passageiros", "description": "Capacidade total de passageiros (incluindo motorista)" },
+      "configuracaoFileiras": { "label": "Fileiras", "description": "Configuração de fileiras de bancos" }
+    }
+  },
+  "enums": {
+    "tipoCombustivel": {
+      "gasolina": "Gasolina",
+      "etanol": "Etanol",
+      "flex": "Flex (Gasolina/Etanol)",
+      "diesel": "Diesel",
+      "hibrido": "Híbrido",
+      "hibrido-plugin": "Híbrido Plug-in",
+      "eletrico": "Elétrico",
+      "gnv": "GNV"
+    },
+    "tipoTransmissao": {
+      "manual-4": "Manual 4 marchas",
+      "manual-5": "Manual 5 marchas",
+      "manual-6": "Manual 6 marchas",
+      "automatico-4": "Automático 4 marchas",
+      "automatico-5": "Automático 5 marchas",
+      "automatico-6": "Automático 6 marchas",
+      "automatico-7": "Automático 7 marchas",
+      "automatico-8": "Automático 8 marchas",
+      "automatico-9": "Automático 9 marchas",
+      "automatico-10": "Automático 10 marchas",
+      "cvt": "CVT",
+      "dct-6": "DCT 6 marchas",
+      "dct-7": "DCT 7 marchas",
+      "dct-8": "DCT 8 marchas",
+      "eletrica": "Transmissão elétrica"
+    },
+    "tipoTracao": {
+      "dianteira": "Dianteira (FWD)",
+      "traseira": "Traseira (RWD)",
+      "4x4": "4x4 / Integral",
+      "awd": "AWD (All-Wheel Drive)"
+    },
+    "tipoFreio": {
+      "disco-ventilado": "Disco ventilado",
+      "disco-solido": "Disco sólido",
+      "tambor": "Tambor"
+    },
+    "tipoArCondicionado": {
+      "manual": "Manual",
+      "digital": "Digital (automático)",
+      "dual-zone": "Dual zone",
+      "tri-zone": "Tri zone",
+      "quad-zone": "Quad zone",
+      "ausente": "Não possui"
+    },
+    "materialRoda": {
+      "liga-leve": "Liga leve",
+      "aco": "Aço"
+    },
+    "tipoDirecao": {
+      "eletrica": "Elétrica",
+      "hidraulica": "Hidráulica",
+      "eletro-hidraulica": "Eletro-hidráulica"
+    },
+    "revestimentoBancos": {
+      "tecido": "Tecido",
+      "couro-sintetico": "Couro sintético",
+      "couro-genuino": "Couro genuíno",
+      "alcantara": "Alcântara"
+    }
+  }
+}
