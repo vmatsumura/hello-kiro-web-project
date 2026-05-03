@@ -1,7 +1,7 @@
 // src/components/ui/BestValueBadge/BestValueBadge.tsx
 // Badge que sinaliza o melhor valor em uma linha de especificação.
 
-import { Chip } from '@mui/material';
+import { Chip, useTheme } from '@mui/material';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import TrendingDownIcon from '@mui/icons-material/TrendingDown';
 import { useTranslation } from 'react-i18next';
@@ -16,9 +16,12 @@ export interface BestValueBadgeProps {
  * Badge visual que indica o melhor valor em uma linha de especificação.
  * - Verde com seta para cima: maior é melhor (ex: potência)
  * - Azul com seta para baixo: menor é melhor (ex: consumo, tempo 0-100)
+ * Adapta as cores automaticamente ao modo claro/escuro.
  */
 export function BestValueBadge({ isHigherBetter }: BestValueBadgeProps) {
   const { t } = useTranslation('comparison');
+  const theme = useTheme();
+  const isDark = theme.palette.mode === 'dark';
 
   const label = isHigherBetter
     ? t('bestValue.higher')
@@ -36,14 +39,18 @@ export function BestValueBadge({ isHigherBetter }: BestValueBadgeProps) {
 
   const sx = isHigherBetter
     ? {
-        bgcolor: colorTokens.bestValueHigherBg,
-        color: colorTokens.bestValueHigherColor,
-        '& .MuiChip-icon': { color: colorTokens.bestValueHigherColor },
+        bgcolor: isDark ? colorTokens.bestValueHigherBgDark : colorTokens.bestValueHigherBg,
+        color: isDark ? colorTokens.bestValueHigherColorDark : colorTokens.bestValueHigherColor,
+        '& .MuiChip-icon': {
+          color: isDark ? colorTokens.bestValueHigherColorDark : colorTokens.bestValueHigherColor,
+        },
       }
     : {
-        bgcolor: colorTokens.bestValueLowerBg,
-        color: colorTokens.bestValueLowerColor,
-        '& .MuiChip-icon': { color: colorTokens.bestValueLowerColor },
+        bgcolor: isDark ? colorTokens.bestValueLowerBgDark : colorTokens.bestValueLowerBg,
+        color: isDark ? colorTokens.bestValueLowerColorDark : colorTokens.bestValueLowerColor,
+        '& .MuiChip-icon': {
+          color: isDark ? colorTokens.bestValueLowerColorDark : colorTokens.bestValueLowerColor,
+        },
       };
 
   return (

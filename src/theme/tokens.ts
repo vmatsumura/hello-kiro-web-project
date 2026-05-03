@@ -32,6 +32,28 @@ export const colorTokens = {
   bestValueLowerBgDark: '#0D47A1',
   /** Badge de melhor valor (menor é melhor) — texto/ícone modo escuro */
   bestValueLowerColorDark: '#90CAF9',
+
+  // ── Contraste do modo escuro ──────────────────────────────────────────────
+
+  /** Texto primário em fundo escuro — contraste >= 4.5:1 contra #121212 */
+  darkText: '#E0E0E0',
+  /** Texto secundário em fundo escuro — contraste >= 3:1 */
+  darkTextSecondary: '#BDBDBD',
+  /** Bordas e divisores sutis em modo escuro */
+  darkBorder: 'rgba(255, 255, 255, 0.12)',
+  /** Bordas de componentes interativos (Select, Input, Card) em modo escuro */
+  darkOutline: 'rgba(255, 255, 255, 0.5)',
+  /** Bordas de componentes interativos no hover/focus em modo escuro */
+  darkOutlineFocus: '#FFFFFF',
+
+  // ── Estado disabled no modo escuro ───────────────────────────────────────
+
+  /** Texto de componentes desabilitados em modo escuro — contraste legível mas visivelmente inativo */
+  darkDisabledText: 'rgba(255, 255, 255, 0.38)',
+  /** Fundo de componentes desabilitados em modo escuro */
+  darkDisabledBg: 'rgba(255, 255, 255, 0.08)',
+  /** Borda de componentes desabilitados em modo escuro */
+  darkDisabledBorder: 'rgba(255, 255, 255, 0.2)',
 } as const;
 
 export type ColorTokens = typeof colorTokens;

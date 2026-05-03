@@ -47,10 +47,12 @@ export function ImageWithFallback({
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          bgcolor: 'action.hover',
+          bgcolor: 'action.selected',
+          border: '1px solid',
+          borderColor: 'divider',
           borderRadius: 1,
           gap: 1,
-          color: 'text.disabled',
+          color: 'text.secondary',
         }}
       >
         <BrokenImageIcon sx={{ fontSize: 40 }} aria-hidden="true" />

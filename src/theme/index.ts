@@ -83,6 +83,11 @@ export const darkTheme = createTheme(baseTheme, {
       default: '#121212',
       paper: '#1E1E1E',
     },
+    text: {
+      primary: colorTokens.darkText,
+      secondary: colorTokens.darkTextSecondary,
+    },
+    divider: colorTokens.darkBorder,
     diffRow: {
       background: colorTokens.diffRowBgDark,
       border: colorTokens.diffRowBorderDark,
@@ -94,6 +99,94 @@ export const darkTheme = createTheme(baseTheme, {
     bestValueLower: {
       background: colorTokens.bestValueLowerBgDark,
       color: colorTokens.bestValueLowerColorDark,
+    },
+  },
+  components: {
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          borderColor: colorTokens.darkOutline,
+        },
+        root: {
+          '&:hover .MuiOutlinedInput-notchedOutline': {
+            borderColor: colorTokens.darkOutlineFocus,
+          },
+          '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+            borderColor: colorTokens.darkOutlineFocus,
+          },
+          '&.Mui-disabled .MuiOutlinedInput-notchedOutline': {
+            borderColor: colorTokens.darkDisabledBorder,
+          },
+          '&.Mui-disabled': {
+            backgroundColor: colorTokens.darkDisabledBg,
+          },
+        },
+      },
+    },
+    MuiInputLabel: {
+      styleOverrides: {
+        root: {
+          '&.Mui-disabled': {
+            color: colorTokens.darkDisabledText,
+          },
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        select: {
+          '&.Mui-disabled': {
+            color: colorTokens.darkDisabledText,
+            WebkitTextFillColor: colorTokens.darkDisabledText,
+          },
+        },
+        icon: {
+          color: colorTokens.darkText,
+          '&.Mui-disabled': {
+            color: colorTokens.darkDisabledText,
+          },
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          '&.Mui-disabled': {
+            color: colorTokens.darkDisabledText,
+            backgroundColor: colorTokens.darkDisabledBg,
+          },
+        },
+      },
+    },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          '&.Mui-disabled': {
+            color: colorTokens.darkDisabledText,
+          },
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          border: `1px solid ${colorTokens.darkBorder}`,
+        },
+      },
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          borderColor: colorTokens.darkBorder,
+        },
+      },
+    },
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          borderColor: colorTokens.darkBorder,
+        },
+      },
     },
   },
 });

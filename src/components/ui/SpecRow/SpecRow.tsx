@@ -1,7 +1,7 @@
 // src/components/ui/SpecRow/SpecRow.tsx
 // Linha de especificação técnica com destaque de diferença e melhor valor.
 
-import { Box, Typography, Stack } from '@mui/material';
+import { Box, Typography, Stack, useTheme } from '@mui/material';
 import { useTranslation } from 'react-i18next';
 import { SpecTooltip } from '../SpecTooltip/SpecTooltip';
 import { BestValueBadge } from '../BestValueBadge/BestValueBadge';
@@ -45,18 +45,21 @@ export function SpecRow({
   isHigherBetter,
 }: SpecRowProps) {
   const { t } = useTranslation('common');
+  const theme = useTheme();
+  const isDark = theme.palette.mode === 'dark';
+
+  const diffBg = isDark ? colorTokens.diffRowBgDark : colorTokens.diffRowBgLight;
+  const diffBorder = isDark ? colorTokens.diffRowBorderDark : colorTokens.diffRowBorderLight;
 
   return (
     <Box
       component="tr"
       sx={{
-        bgcolor: hasDiff ? colorTokens.diffRowBgLight : 'transparent',
+        bgcolor: hasDiff ? diffBg : 'transparent',
         borderLeft: hasDiff
-          ? `3px solid ${colorTokens.diffRowBorderLight}`
+          ? `3px solid ${diffBorder}`
           : '3px solid transparent',
         '&:hover': { bgcolor: 'action.hover' },
-        // Suporte a dark mode via CSS custom properties não é direto com tokens estáticos,
-        // mas o tema MUI gerencia isso via ThemeProvider
       }}
     >
       {/* Célula do rótulo */}

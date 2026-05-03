@@ -45,8 +45,11 @@ export function VehicleCard({ vehicle, onRemove }: VehicleCardProps) {
           top: 4,
           right: 4,
           bgcolor: 'background.paper',
+          border: '1px solid',
+          borderColor: 'divider',
           boxShadow: 1,
-          '&:hover': { bgcolor: 'error.light', color: 'error.contrastText' },
+          color: 'text.primary',
+          '&:hover': { bgcolor: 'error.main', borderColor: 'error.main', color: '#fff' },
         }}
       >
         <CloseIcon fontSize="small" />
