@@ -4,7 +4,7 @@ import { resolve } from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'hello-kiro-web-project',
+  base: '/hello-kiro-web-project/',
   plugins: [react()],
   resolve: {
     alias: {
