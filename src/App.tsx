@@ -54,7 +54,7 @@ function AppContent() {
 export function App() {
   return (
     <I18nextProvider i18n={i18n}>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <AppContent />
       </BrowserRouter>
     </I18nextProvider>
