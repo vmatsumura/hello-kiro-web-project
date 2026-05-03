@@ -576,3 +576,27 @@ ull
 - Testes de propriedade (fast-check) validam invariantes universais; testes de componente (RTL + jest-axe) validam comportamentos especificos e acessibilidade
 - Os dados das 3 marcas (tarefas 13-15) sao as tarefas mais trabalhosas em volume — priorize a estrutura correta sobre a completude inicial
 - A ordem das tarefas segue o grafo de dependencias: infraestrutura -> tipos -> utilitarios -> i18n -> servicos -> stores -> hooks -> componentes -> paginas -> dados -> validacao final
+
+- [x] 20. Corrigir contraste do modo escuro
+  - [x] 20.1 Atualizar tokens de cor em src/theme/tokens.ts para modo escuro
+    - Adicionar token `darkText` com valor `#E0E0E0` (texto primario em fundo escuro, contraste >= 4.5:1 contra #121212)
+    - Adicionar token `darkTextSecondary` com valor `#BDBDBD` (texto secundario, contraste >= 3:1)
+    - Adicionar token `darkBorder` com valor `#FFFFFF1F` (bordas/divisores sutis em modo escuro)
+    - Adicionar token `darkOutline` com valor `#FFFFFF` (bordas de componentes interativos como Select, Input, Card)
+    - _Requisitos: 12.2_
+
+  - [x] 20.2 Atualizar darkTheme em src/theme/index.ts com palette de texto e bordas
+    - Definir `palette.text.primary` como `#E0E0E0` e `palette.text.secondary` como `#BDBDBD`
+    - Definir `palette.divider` como `rgba(255,255,255,0.12)`
+    - Adicionar override de `MuiOutlinedInput` para usar `borderColor: rgba(255,255,255,0.5)` no estado normal e `#FFFFFF` no hover/focus
+    - Adicionar override de `MuiSelect` para herdar as bordas do `MuiOutlinedInput`
+    - Adicionar override de `MuiCard` para adicionar `border: 1px solid rgba(255,255,255,0.12)` no modo escuro
+    - Adicionar override de `MuiTableCell` e `MuiDivider` para usar `borderColor: rgba(255,255,255,0.12)`
+    - _Requisitos: 12.2_
+
+  - [x] 20.3 Verificar contraste de todos os componentes no modo escuro
+    - Confirmar que textos em VehicleCard, SpecRow, SpecBlock e AppHeader atendem WCAG AA (4.5:1 para texto normal, 3:1 para texto grande)
+    - Confirmar que bordas de Select e Input sao visiveis contra o fundo `#1E1E1E`
+    - Confirmar que badges de melhor valor (BestValueBadge) mantem contraste adequado com os tokens `bestValueHigherBgDark` e `bestValueLowerBgDark`
+    - Confirmar que linhas com diferenca (diffRowBgDark) tem contraste suficiente para o texto sobreposto
+    - _Requisitos: 12.2_
